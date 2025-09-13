@@ -27,7 +27,6 @@ import { DocumentsModule } from './documents/documents.module';
       }),
     }),
 
-    // ✅ Importando os módulos de funcionalidade
     EmployeesModule,
     DocumentTypesModule,
     DocumentsModule,

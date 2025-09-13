@@ -31,7 +31,7 @@ src/
 
 ### Variáveis de Ambiente
 
-Crie um arquivo `.env` com as seguintes variáveis (não inclua senhas diretamente no repositório):
+Crie um arquivo `.env` com as seguintes variáveis:
 NODE_ENV=development
 DB_HOST=localhost
 DB_PORT=5432

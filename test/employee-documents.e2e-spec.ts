@@ -12,7 +12,6 @@ describe('Employee to Employee Document Flow (E2E)', () => {
   let carteiraTypeId: string;
   let cpfDocumentId: string;
 
-  // Gera CPF aleatório para evitar duplicidade
   const generateRandomCpf = () =>
     Math.floor(10000000000 + Math.random() * 90000000000).toString();
 
@@ -31,7 +30,7 @@ describe('Employee to Employee Document Flow (E2E)', () => {
       .post('/employees')
       .send({
         name: 'João da Silva',
-        cpf: generateRandomCpf(), // CPF único
+        cpf: generateRandomCpf(),
         hiredAt: '2025-09-11',
       })
       .expect(201);
@@ -113,7 +112,7 @@ describe('Employee to Employee Document Flow (E2E)', () => {
       .put(`/employees/${employeeId}`)
       .send({
         name: 'João Atualizado',
-        cpf: generateRandomCpf(), // CPF único
+        cpf: generateRandomCpf(),
       })
       .expect(200);
 
